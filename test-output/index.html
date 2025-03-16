@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\sanim\AppData\Local\Temp\testng-eclipse-1298654837\testng-customsuite.xml</span>
+                    <span>C:\Users\sanim\AppData\Local\Temp\testng-eclipse--930639326\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,11 +101,6 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
                     <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User is able to Login successfully&quot;, &quot;BookCart Login page&quot;)">runScenario("User is able to Login successfully", "BookCart Login page")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="runner.Runner" class="method navigator-link" hash-for-method="runScenario(&quot;User is able to register successfully&quot;, &quot;BookCart Registration page&quot;)">runScenario("User is able to register successfully", "BookCart Registration page")</a> <!-- method navigator-link -->
@@ -131,33 +126,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User is able to Login successfully&quot;, &quot;BookCart Login page&quot;)">
-                  </a> <!-- runScenario("User is able to Login successfully", "BookCart Login page") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("User is able to Login successfully","BookCart Login page")</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
-	at steps.Loginpage.clicks_on_login_button(Loginpage.java:18)
-	at ✽.Clicks on Login button(file:///C:/Users/sanim/JavaPrograms/CucumberBasics/src/test/java/features/Login.feature:24)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;User is able to register successfully&quot;, &quot;BookCart Registration page&quot;)">
                   </a> <!-- runScenario("User is able to register successfully", "BookCart Registration page") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("User is able to register successfully","BookCart Registration page")</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [Register] but found [Login]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at steps.Registerpage.login_page_should_display(Registerpage.java:64)
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at steps.Registerpage.login_page_should_display(Registerpage.java:107)
 	at ✽.Login page should display(file:///C:/Users/sanim/JavaPrograms/CucumberBasics/src/test/java/features/Register.feature:27)
 
 </div> <!-- stack-trace -->
@@ -170,7 +150,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\sanim\AppData\Local\Temp\testng-eclipse-1298654837\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\sanim\AppData\Local\Temp\testng-eclipse--930639326\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -227,20 +207,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.Runner')
-data.setCell(0, 3, 18233);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'runner.Runner')
-data.setCell(1, 3, 6787);
+data.setCell(0, 3, 21797);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -268,24 +244,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.Runner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@6de30571)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@5c448433)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("User is able to Login successfully", "BookCart Login page")</span>
-                <span class="method-start">194 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("User is able to register successfully", "BookCart Registration page")</span>
-                <span class="method-start">6989 ms</span>
+                <span class="method-start">187 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">25233 ms</span>
+                <span class="method-start">22016 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

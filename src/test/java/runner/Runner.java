@@ -6,8 +6,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		
 		features = "src/test/java/features/Register.feature",  //---mention any scenario start line, then it will execute only that scenario
-		glue="steps" ,dryRun=false, tags="@reg",
-		plugin={"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
+		glue="steps" ,dryRun=false, tags="@smoke",
+		plugin={"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm", "rerun:target/failedrerun.txt"}
+		
 		//plugin = { "pretty", "html:target/cucumber-reports.html" })
 		//plugin= {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runner.Runner" time="24.759" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.Runner" time="24.766" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
@@ -33,18 +33,18 @@
     <property name="java.class.version" value="61.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="surefire.rerunFailingTestsCount" value="1"/>
     <property name="os.version" value="10.0"/>
     <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.9.9\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\sanim"/>
     <property name="user.timezone" value="Europe/London"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.specification.version" value="17"/>
-    <property name="cucumber.filter.tags" value="@smoke"/>
     <property name="user.name" value="sanim"/>
     <property name="java.class.path" value="C:\Program Files\apache-maven-3.9.9\boot\plexus-classworlds-2.8.0.jar"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Drunner=runner.Runner -Dcucumber.filter.tags=@smoke"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Drunner=runner.Runner -Dsurefire.rerunFailingTestsCount=1"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -62,19 +62,15 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="runScenario" classname="runner.Runner" time="24.759">
+  <testcase name="runScenario" classname="runner.Runner" time="23.919">
     <failure message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-	at steps.Registerpage.user_enters_required_data_and_selects_gender(Registerpage.java:86)
-	at ✽.User enters required data and  selects Gender(file:///C:/Users/sanim/JavaPrograms/CucumberBasics/src/test/java/features/Register.feature:41)
 </failure>
-    <system-out><![CDATA[Configuring TestNG with: TestNG652Configurator
-]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Mar 16, 2025 4:10:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 16, 2025 6:57:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 134
-Mar 16, 2025 4:10:31 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Mar 16, 2025 6:57:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 134.0.6998.89. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.17.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>

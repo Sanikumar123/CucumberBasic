@@ -1,9 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.685 sec <<< FAILURE! - in runner.Runner
-runScenario(runner.Runner)  Time elapsed: 24.759 sec  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.766 sec <<< FAILURE! - in runner.Runner
+runScenario(runner.Runner)  Time elapsed: 23.919 sec  <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-	at steps.Registerpage.user_enters_required_data_and_selects_gender(Registerpage.java:86)
-	at ?.User enters required data and  selects Gender(file:///C:/Users/sanim/JavaPrograms/CucumberBasics/src/test/java/features/Register.feature:41)
 

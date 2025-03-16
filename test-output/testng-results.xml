@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-15T18:03:20 GMT" name="Default suite" finished-at="2025-03-15T18:03:42 GMT" duration-ms="22051">
+  <suite started-at="2025-03-16T18:45:51 GMT" name="Suite" finished-at="2025-03-16T18:47:10 GMT" duration-ms="78797">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@1df8da7a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.FailedRunner@61710c6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-03-15T18:03:20 GMT" name="Default test" finished-at="2025-03-15T18:03:42 GMT" duration-ms="22051">
+    <test started-at="2025-03-16T18:45:51 GMT" name="Test" finished-at="2025-03-16T18:46:49 GMT" duration-ms="57107">
       <class name="runner.Runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Runner@1df8da7a]" started-at="2025-03-15T18:03:20 GMT" name="setUpClass" finished-at="2025-03-15T18:03:20 GMT" duration-ms="171" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.Runner@1df8da7a]" started-at="2025-03-16T18:45:51 GMT" name="setUpClass" finished-at="2025-03-16T18:45:52 GMT" duration-ms="180" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5c448433]]>
+                <![CDATA[org.testng.TestRunner@6920614]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@1df8da7a]" started-at="2025-03-15T18:03:20 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-15T18:03:42 GMT" duration-ms="21797" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.Runner@1df8da7a]" started-at="2025-03-16T18:45:52 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-16T18:46:48 GMT" duration-ms="56877" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User is able to register successfully"]]>
+                <![CDATA["User is able to register successfully parameters datatable"]]>
               </value>
             </param>
             <param index="1">
@@ -34,31 +35,71 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[expected [Register] but found [Login]]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Register] but found [Login]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at steps.Registerpage.login_page_should_display(Registerpage.java:107)
-at ✽.Login page should display(file:///C:/Users/sanim/JavaPrograms/CucumberBasics/src/test/java/features/Register.feature:27)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at steps.Registerpage.user_enters_required_data_and_selects_gender(Registerpage.java:86)
+at ✽.User enters required data and  selects Gender(file:///C:/Users/sanim/JavaPrograms/CucumberBasics/src/test/java/features/Register.feature:41)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@1df8da7a]" started-at="2025-03-15T18:03:42 GMT" name="tearDownClass" finished-at="2025-03-15T18:03:42 GMT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.Runner@1df8da7a]" started-at="2025-03-16T18:46:49 GMT" name="tearDownClass" finished-at="2025-03-16T18:46:49 GMT" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runner.Runner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+    <test started-at="2025-03-16T18:46:49 GMT" name="Test1" finished-at="2025-03-16T18:47:10 GMT" duration-ms="21619">
+      <class name="runner.FailedRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.FailedRunner@61710c6]" started-at="2025-03-16T18:46:49 GMT" name="setUpClass" finished-at="2025-03-16T18:46:49 GMT" duration-ms="45" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6069dd38]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.FailedRunner@61710c6]" started-at="2025-03-16T18:46:49 GMT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-16T18:47:10 GMT" duration-ms="21556" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is able to register successfully parameters datatable"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["BookCart Registration page"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+at steps.Registerpage.user_enters_required_data_and_selects_gender(Registerpage.java:86)
+at ✽.User enters required data and  selects Gender(file:///C:/Users/sanim/JavaPrograms/CucumberBasics/src/test/java/features/Register.feature:41)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.FailedRunner@61710c6]" started-at="2025-03-16T18:47:10 GMT" name="tearDownClass" finished-at="2025-03-16T18:47:10 GMT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.FailedRunner -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>

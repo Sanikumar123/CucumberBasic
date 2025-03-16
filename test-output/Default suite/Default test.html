@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 15 18:03:20 GMT 2025</td>
+<td>Started on:</td><td>Sun Mar 16 18:35:14 GMT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22051 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24028 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,28 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to register successfully", "BookCart Registration page"</td>
-<td><div><pre>java.lang.AssertionError: expected [Register] but found [Login]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at steps.Registerpage.login_page_should_display(Registerpage.java:107)
-	at ✽.Login page should display(file:///C:/Users/sanim/JavaPrograms/CucumberBasics/src/test/java/features/Register.feature:27)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1029148906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1029148906'><pre>java.lang.AssertionError: expected [Register] but found [Login]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at steps.Registerpage.login_page_should_display(Registerpage.java:107)
-	at ✽.Login page should display(file:///C:/Users/sanim/JavaPrograms/CucumberBasics/src/test/java/features/Register.feature:27)
+<td title='runner.Runner.runScenario()'><b>runScenario</b><br>Test class: runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to register successfully parameters datatable", "BookCart Registration page"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at steps.Registerpage.user_enters_required_data_and_selects_gender(Registerpage.java:86)
+	at ✽.User enters required data and  selects Gender(file:///C:/Users/sanim/JavaPrograms/CucumberBasics/src/test/java/features/Register.feature:41)
+</pre></div><a href='#' onClick='toggleBox("stack-trace254315540", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace254315540'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at steps.Registerpage.user_enters_required_data_and_selects_gender(Registerpage.java:86)
+	at ✽.User enters required data and  selects Gender(file:///C:/Users/sanim/JavaPrograms/CucumberBasics/src/test/java/features/Register.feature:41)
 </pre></div></td>
-<td>21</td>
+<td>23</td>
 <td>runner.Runner@1df8da7a</td></tr>
 </table><p>
 </body>
